@@ -26,8 +26,8 @@ Set QUOTED_IDENTIFIER ON
 GO
 
 Create TABLE [dbo].[Companies](
-	[CompanyID] [nchar] (10) NULL,
-	[Name] [varchar] (50) NOT NULL,
+	[CompanyID] [nchar] (10) NOT NULL,
+	[Name] [varchar] (50) NULL,
 	[Street] [varchar] (50) NULL,
 	[City] [varchar] (50) NULL,
 	[ZIP] [nchar] (5) NULL,
