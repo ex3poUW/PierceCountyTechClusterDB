@@ -30,7 +30,7 @@ Create TABLE [dbo].[Companies](
 	[Name] [varchar] (50) NULL,
 	[Street] [varchar] (50) NULL,
 	[City] [varchar] (50) NULL,
-	[ZIP] [nchar] (5) NULL,
+	[ZIP] [varchar] (5) NULL,
 	[Website] [varchar] (50) NULL,
 	[ContactFirstName] [varchar] (50) NULL,
 	[ContactLastName] [varchar] (50) NULL,
@@ -40,7 +40,7 @@ Create TABLE [dbo].[Companies](
 	[DecisionMaker] [varchar] (50) NULL,
 	[Sector] [varchar] (100) NULL,
 	[SubSector] [varchar] (100) NULL,
-	[EmployeeNumber] [float] NULL,
+	[EmployeeNumber] [varchar] NULL,
 	[EstimatedSales] [varchar] (50) NULL,
 
 PRIMARY KEY CLUSTERED 
