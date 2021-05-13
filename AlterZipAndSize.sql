@@ -9,3 +9,4 @@ Use PCTC
 
 Alter Table Addresses Alter Column [Zip Code] Varchar(5)
 Alter Table CompanyInformation Alter Column [Company Size] Varchar(15)
+Alter Table Contacts Alter Column [Extension] Varchar(6)
