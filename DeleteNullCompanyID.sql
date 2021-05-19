@@ -3,6 +3,8 @@
   Date ------- Developer --- Description
   2021-05-07 - CJ Cummings - Created Query
   2021-05-12 - CJ Cummings - Patched compatability with spreadsheet
+
+  Note: Is unneeded unless data is exported from Excel
 */
 
 Use PCTC
