@@ -13,4 +13,4 @@
 
 /* Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (##,'','','','','','','') */
 
-/* Insert [dbo].[CompanyInformation] ([Company ID],[Sector],[SubSector],[Company Size],[Estimated Sales],[Notes]) Values (#,'','','','','',) */
+/* Insert [dbo].[CompanyInformation] ([Company ID],[Sector],[SubSector],[Company Size],[Estimated Sales],[Notes]) Values (#,'','','','','','') */
