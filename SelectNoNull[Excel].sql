@@ -2,7 +2,7 @@
   Change History
   Date ------- Developer --- Description
   2021-05-07 - CJ Cummings - Created Query
-  2021-05-12 - CJ Cummings - Patched compatability
+  2021-05-12 - CJ Cummings - Patched compatibility
 
   Note: Is unneeded unless data is exported from Excel
 */
