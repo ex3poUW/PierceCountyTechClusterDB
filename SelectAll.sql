@@ -6,6 +6,7 @@
   Presents all tables in the database
 */
 
+Use PCTC
 
 Select Companies.[Company ID],Companies.[Name],Companies.[Street],Companies.[City],Companies.[State],
 	   Companies.[ZIP],Contacts.[Website],Contacts.[Contact First Name],Contacts.[Contact Last Name],
