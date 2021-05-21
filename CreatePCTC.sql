@@ -6,6 +6,7 @@
   2021-05-18 - CJ Cummings - Finalizing DB
   2021-05-18 - CJ Cummings - Adding Data
   2021-05-19 - CJ Cummings - Adding Data
+  2021-05-21 - CJ Cummings - Made Company ID ReadOnly
 */
 
 USE master
@@ -29,7 +30,7 @@ Set QUOTED_IDENTIFIER ON
 GO
 
 Create Table [dbo].[Companies](
-	[Company ID] [nchar] (10) NOT NULL,
+	[Company ID] [int] NOT NULL,
 	[Name] [varchar] (50) NULL,
 	[Street] [varchar] (50) NULL,
 	[City] [varchar] (50) NULL,
@@ -39,7 +40,7 @@ Create Table [dbo].[Companies](
 
 /***** Object: Table dbo.CompanyInformation [CJ Cummings 05/12/2021] *****/
 Create Table [dbo].[Contacts](
-	[Company ID] [nchar] (10) NOT NULL,
+	[Company ID] [int] NOT NULL,
 	[Website] [varchar] (50) NULL,
 	[Contact First Name] [varchar] (50) NULL,
 	[Contact Last Name] [varchar] (50) NULL,
@@ -51,7 +52,7 @@ Create Table [dbo].[Contacts](
 
 /***** Object: Table dbo.Contacts [CJ Cummings 05/12/2021] *****/
 Create Table [dbo].[CompanyInformation](
-	[Company ID] [nchar] (10) NOT NULL,
+	[Company ID] [int] NOT NULL,
 	[Sector] [varchar] (100) NULL,
 	[SubSector] [varchar] (100) NULL,
 	[Company Size] [varchar] (20) NULL,
@@ -159,7 +160,7 @@ Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact La
 Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (44,'thesnapbar.com',			'Sam',		'Eitzen',		'253-432-3640',	'',		'',				'Sam@thesnapbar.com')
 Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (45,'surgecoworking.com',		'Eli',		'Moreno',		'253-365-2737',	'',		'253-279-0776',	'elim@surgetacoma.com')
 Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (45,'',							'Stasha',	'Moreno',		'253-365-2737',	'',		'',				'stasha@unionclubtacoma.com')
-Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (45,'',							'Rob',		'Meyerson',		'206-255-6979',	'',		'',				'meyersonr@delalunespace.com')
+Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (46,'',							'Rob',		'Meyerson',		'206-255-6979',	'',		'',				'meyersonr@delalunespace.com')
 Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (47,'yourtechmasters.com',		'Wade',		'Stewart',		'833-648-6724',	'x100',	'',				'wstewart@tmcs.pro')
 Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (48,'gurustacoma.com',			'David',	'Printz',		'253-761-4848',	'',		'',				'')
 Insert [dbo].[Contacts] ([Company ID],[Website],[Contact First Name],[Contact Last Name],[WorkPhone],[Extension],[CellPhone],[EmailAddress]) Values (49,'thepioneercollective.com',	'Chris',	'Hoyt',			'206-310-2863',	'',		'',				'chris@thepioneercollective.com')
